@@ -1,0 +1,10 @@
+if exists('g:vundle_installing_plugins')
+  Plugin 'SirVer/ultisnips'
+  finish
+endif
+
+let g:UltiSnipsSnippetDirectories=["MyUltiSnips"]
+let g:UltiSnipsListSnippets="<c-s-tab>"
+let g:UltiSnipsExpandTrigger="<s-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"

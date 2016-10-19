@@ -1,0 +1,37 @@
+URxvt.termName:	rxvt-256color
+URxvt.font: xft:Source Code Pro for Powerline:pixelsize=16
+URxvt.letterSpace: -1
+URxvt.urlLauncher: google-chrome
+URxvt.perl-ext-common: default,matcher,clipboard,selection-to-clipboard
+URxvt.matcher.button: 1
+URxvt.scrollstyle: plain
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 220
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+Rxvt*background:   #282420
+Rxvt*foreground:   #e5c6a8
+Rxvt*cursorColor:   #f6f6ec
+Rxvt*color0:   #111417
+Rxvt*color1:   #c84134
+Rxvt*color2:   #84c44b
+Rxvt*color3:   #f4ae2e
+Rxvt*color4:   #1397b9
+Rxvt*color5:   #d0623c
+Rxvt*color6:   #4f9452
+Rxvt*color7:   #e5c5a9
+Rxvt*color8:   #665e54
+Rxvt*color9:   #ff6459
+Rxvt*color10:   #97e035
+Rxvt*color11:   #dfd561
+Rxvt*color12:   #5ed9ff
+Rxvt*color13:   #ff9168
+Rxvt*color14:   #83ef88
+Rxvt*color15:   #f6f6ec
