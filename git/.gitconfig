@@ -1,0 +1,9 @@
+[user]
+	email = john@begeman.us
+	name = John Begeman
+[merge]
+	tool = meld
+[core]
+	editor = vim
+[push]
+	default = matching
