@@ -1,22 +1,33 @@
 #! /bin/sh
-
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+feh --bg-fill ~/Dropbox/wallpapers/o2106430.jpg
+parcellite &
 sxhkd &
-
-bspc monitor -d I II III IV
-bspc config remove_disabled_monitor true
-bspc config border_width         2
-bspc config window_gap          10
-
+yabar &
+bspc monitor eDP1 -n R
+bspc monitor -d R ""
+bspc monitor DP1-8 -n C
+bspc monitor -d C ""
+bspc monitor DP1-1 -n L
+bspc monitor -d L ""
+bspc config remove_unplugged_monitors true
+# bspc config click_to_focus true
+bspc config remove_disabled_monitors true
+bspc config border_width         4
+bspc config window_gap          15
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_by_distance    true
 bspc config history_aware_focus  true
-bspc config left_padding 20
+bspc config left_padding 0
+bspc config top_padding 25
 bspc rule -a spotify desktop='^3'
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-parcellite &
+xsetroot -cursor_name left_ptr
+feh --bg-tile /home/jawn/Dropbox/wallpapers/topo-tile.png
+/home/jawn/.local/bin/xps13_multimonitor

@@ -105,11 +105,14 @@ vnoremap <C-k> 15gkzz
 " ---------------
 
 " Let's make escape better, together.
+
 inoremap jk <Esc>
 inoremap JK <Esc>
 inoremap Jk <Esc>
 inoremap jK <Esc>
-
+inoremap kj <Esc>
+inoremap Kj <Esc>
+inoremap kJ <Esc>
 " ---------------
 " Leader Mappings
 " ---------------
@@ -209,3 +212,11 @@ if has("mac") || has("gui_macvim") || has("gui_mac")
   " directory name (/something/src)
   nnoremap <silent> <leader>yd :let @*=expand("%:p:h")<CR>
 endif
+" PYTEST "
+noremap <silent> <leader>p <Esc>:Pytest project<CR>
+noremap <silent> <leader>f <Esc>:Pytest function<CR>
+noremap <silent> <leader>c <Esc>:Pytest class<CR>
+noremap <silent> <leader>m <Esc>:Pytest method<CR>
+noremap <silent> <leader>F <Esc>:Pytest file<CR>
+noremap <silent> <leader>s <Esc>:Pytest session<CR>
+

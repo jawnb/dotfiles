@@ -1,12 +1,16 @@
+URxvt*depth: 32
+URxvt*background: #282420
 URxvt.termName:	rxvt-256color
-URxvt.font: xft:Source Code Pro for Powerline:pixelsize=16
+URxvt.font: xft:Source Code Pro for Powerline:pixelsize=20
 URxvt.letterSpace: -1
 URxvt.urlLauncher: google-chrome
+URxvt.perl-lib: ~/.urxvt/ext
 URxvt.perl-ext-common: default,matcher,clipboard,selection-to-clipboard
 URxvt.matcher.button: 1
 URxvt.scrollstyle: plain
-URxvt.iso14755: False
+URxvt.keysym.Control-V: perl:clipboard:paste
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
 
 Xft.antialias: 1
 Xft.autohint: 0

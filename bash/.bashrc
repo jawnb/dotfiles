@@ -115,10 +115,15 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export LD_LIBRARY_PATH=/usr/local/lib
 export PATH=$PATH:~/.local/bin:~/gopath/bin
 export GOPATH=~/gopath
 alias vi=vim
 export WORKON_HOME=~/.venv
-source ~/.local/bin/virtualenvwrapper_lazy.sh
-source /home/chrx/.local/bin/activate.sh
+alias notes='pushd ~/notes >/dev/null && vim -c "cd ~/Dropbox/notes" && popd >/dev/null'
 alias t=task
+export PATH=$PATH:~/.pyenv/bin
+eval "$(pyenv init -)"
+alias jj='pyenv activate jj; cd ~/code/jj'
+alias alerts='pyenv activate alerts; cd ~/code/magnumpi'
+

@@ -2,15 +2,15 @@
 
 <channel name="displays" version="1.0">
   <property name="Default" type="empty">
-    <property name="eDP1" type="string" value="1. Chimei Innolux Corporation 12&quot;">
+    <property name="eDP1" type="string" value="1. Sharp Corporation 13&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="Resolution" type="string" value="1366x768"/>
-      <property name="RefreshRate" type="double" value="60.003141"/>
+      <property name="Resolution" type="string" value="3200x1800"/>
+      <property name="RefreshRate" type="double" value="59.981809"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="6400"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
@@ -23,6 +23,42 @@
       <property name="Primary" type="bool" value="true"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP1" type="string" value="2. Dell Inc. 27&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="3840x2160"/>
+      <property name="RefreshRate" type="double" value="59.996625"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP1-1" type="string" value="2. Dell Inc. 27&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="59.950550"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP1-8" type="string" value="3. Dell Inc. 27&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="3840x2160"/>
+      <property name="RefreshRate" type="double" value="29.980602"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="true"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="2560"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>

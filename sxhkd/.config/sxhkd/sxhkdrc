@@ -88,10 +88,6 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-#
-# preselect
-#
-
 # preselect the direction
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
@@ -121,16 +117,19 @@ super + alt + shift + {h,j,k,l}
 	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
 
 # move a floating window
-super + {Left,Down,Up,Right}
-	xdo move {-x -20,-y +20,-y -20,-x +20}
+#super + {Left,Down,Up,Right}
+#	xdo move {-x -20,-y +20,-y -20,-x +20}
+super + shift + {Left, Right}
+  bspc node -m {prev, next}; bspc monitor -f {prev, next}
+super + {Left, Right}
+  bspc monitor -f {prev, next}
 
-#
 # pointer focus/move/resize
 #
 
 # focus
 ~button1
-	bspc pointer -g focus
+	bspc node -f pointed
 
 # start move/resize
 super + button{1-3}

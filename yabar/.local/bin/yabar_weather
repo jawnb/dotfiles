@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+FORECAST_IO_API_KEY=$(cat ~/.secrets/FORECAST_IO) ~/.local/bin/emoji_weather -zipcode 22192 -temp=f
